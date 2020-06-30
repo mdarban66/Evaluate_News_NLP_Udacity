@@ -1,29 +1,20 @@
-# Webbpack Express Example App
+## Evaluate News Article With NLP
 
-The goal of this repo is be an example of a basic but functional app built on Express and Webpack.
+The news article with NLP project is developed using a client-server architecture which makes a call to the Aylien API after sbmitting the form. When the call is successful, the API response will be demonstrated in the browser. The result is the sentiment analysis of the text of the URL that is pasted into the textbox. 
+In this project I took advantage of Webpack, Sass, APIs, Service Workers, and Jest Tests to do the described job. 
 
-If you want to follow along, start from branch 0-initial-setup. Each branch in this project is a step along the path to creating a fully functional webpack setup. In each branch, there will be a documentation file that lists out the steps taken in that branch (each step is also roughly a git commit if you look at the history) which you can use as a checklist when setting up your own projects. 
+## Building The Project
+Here's a quick how-to guide of commands for building and running Jest tests and the project used by the developer:
 
-## What we will cover
+1. npm i - to install the requirements and dependencies
+2. npm run build-dev - to build a development version of the project and start the webpack dev server
+3. npm run build-prod - to build a production version that will be located in the dist folder to be used by the server
+4. npm run test - to run jest tests
+5. npm start - to start the node server
 
-We will cover:
-
-- Webpack entry point
-- Webpack output and dist folder
-- Webpack Loaders
-- Webpack Plugins
-- Webpack Mode
-- Tools for convenient Webpack development
-
-## Get Up and Running
-
-Fork this repo, then clone the branch of your choice from your forked repo down to your computer:
-
-```
-git clone -- git@github.com:[your-user-name]/webpack-express.git --
-```
-
-`cd` into your new folder and run:
-- ```npm install```
-- ```npm start``` to start the app
-- this app runs on localhost:8080, but you can of course edit that in server.js
+## Running The Project
+After navigating to the folder that includes the project, follow these steps:
+1. npm install
+2. npm start
+3. Access the url http://localhost:8081
+4. In the textbox, enter the url of the page with the text to be analysed.

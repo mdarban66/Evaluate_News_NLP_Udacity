@@ -8,8 +8,9 @@ function checkForName(inputText) {
         "Georgiou"
     ]
 
-    if(names.includes(inputText)) {
-        alert("Welcome, Captain!")
+    if (names.includes(inputText)) {
+        alert(`Welcome, Captain ${inputText}! 
+        Please enter a valid URL instead of your username...`)
     }
 }
 

@@ -24,22 +24,56 @@
 
     <main>
         <section>
-            <form class="" onsubmit="return handleSubmit(event)">
-                <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+            <form class="" onsubmit="return Client.handleSubmit(event)">
+                <!-- <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+                <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)"> -->
+                <!-- <label for="name">Username</label>
+                <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name"> -->
+                <label for="url">URL to the text</label>
+                <input id="url" type="text" name="input" value="" placeholder="URL">
                 <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
             </form>
-            <section>
+        </section>
 
-                <section>
-                    <strong>Form Results:</strong>
+        <section id='result_fields'>
+            <strong>FORM RESULTS:</strong>
+            <ul>
+                <li>
+                    <!-- <h5>Article Content:</h5> -->
                     <div id="results"></div>
-                </section>
+                </li>
+                <li>
+                    <!-- <label for="result_polarity">Polarity: </label> -->
+                    <div id="result_polarity"></div>
+                </li>
+                <li>
+                    <!-- <label for="result_polarity_conf">Plarity Confidence: </label> -->
+                    <div id="result_polarity_conf"></div>
+                </li>
+                <li>
+                    <!-- <label for="result_subjectivity">Subjectivity: </label> -->
+                    <div id="result_subjectivity"></div>
+                </li>
+                <li>
+                    <!-- <label for="result_subjectivity_conf">Subjectivity Confidence: </label> -->
+                    <div id="result_subjectivity_conf"></div>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <footer>
         <p>This is a footer</p>
     </footer>
-
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
 </body>
 
 </html>
