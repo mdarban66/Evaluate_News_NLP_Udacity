@@ -1,6 +1,6 @@
 ## Evaluate News Article With NLP
 
-The news article with NLP project is developed using a client-server architecture which makes a call to the Aylien API after sbmitting the form. When the call is successful, the API response will be demonstrated in the browser. The result is the sentiment analysis of the text of the URL that is pasted into the textbox. 
+The news article with NLP project is developed using a client-server architecture which makes a call to the Aylien API after submitting the form. When the call is successful, the API response will be demonstrated in the browser. The result is the sentiment analysis of the text of the URL that is pasted into the textbox. 
 In this project I took advantage of Webpack, Sass, APIs, Service Workers, and Jest Tests to do the described job. 
 
 ## Building The Project
