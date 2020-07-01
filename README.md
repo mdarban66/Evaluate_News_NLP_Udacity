@@ -4,7 +4,7 @@
 The news article with NLP project is developed using a client-server architecture which makes a call to the Aylien API after submitting the form. When the call is successful, the API response will be demonstrated in the browser. The result is the sentiment analysis of the text of the URL that is pasted into the textbox. 
 In this project I took advantage of Webpack, Sass, APIs, Service Workers, and Jest Tests to do the described job. 
 
-#Getting Started
+# Getting Started
 ## Building The Project
 Here's a quick how-to guide of commands for building and running Jest tests and the project used by the developer:
 
